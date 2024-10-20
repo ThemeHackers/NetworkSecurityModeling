@@ -1,6 +1,16 @@
 # Network Security Modeling using Machine Learning 97.53%
-## Downloads Dataset 
-```bash https://www.kaggle.com/datasets/mrwellsdavid/unsw-nb15
+## Downloads Dataset with link
+```bash
+https://www.kaggle.com/datasets/mrwellsdavid/unsw-nb15
+```
+## Downloads Dataset with Kaggle API
+```bash
+import kagglehub
+
+# Download latest version
+path = kagglehub.dataset_download("mrwellsdavid/unsw-nb15")
+
+print("Path to dataset files:", path)
 ```
 ## Project Overview
 This project analyzes and models network security using machine learning techniques, based on the UNSW-NB15 dataset, a well-known dataset for network traffic analysis and intrusion detection. The aim is to predict network intrusions or security events using advanced machine learning models by leveraging the network traffic features provided in the dataset.
