@@ -58,7 +58,7 @@ pio.templates["ck_template"] = go.layout.Template(
     layout_hoverlabel_font=dict(family="Calibri Light"),
 )
 pio.templates.default = 'ck_template+gridon'
-unsw_ = path + r'\\UNSW_NB15_training-set.csv'
+unsw_ = path + r'//UNSW_NB15_training-set.csv'
 print(Fore.BLUE + f'Dataset Path')
 print(unsw_)
 df = pd.read_csv(unsw_)
