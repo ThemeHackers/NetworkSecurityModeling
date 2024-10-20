@@ -25,7 +25,7 @@ Both models are compared in terms of performance metrics such as accuracy, preci
 Install the following Python libraries to run this project:
 
 ```bash
-pip install numpy pandas scikit-learn tensorflow matplotlib seaborn plotly colorama pyfiglet joblib IPython
+pip install numpy pandas scikit-learn tensorflow matplotlib seaborn plotly colorama pyfiglet joblib IPython kagglehub
 ```
 ## Key Libraries
 - **Pandas**: For data manipulation and cleaning.
