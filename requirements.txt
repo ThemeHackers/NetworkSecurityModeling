@@ -1,0 +1,14 @@
+numpy 
+pandas 
+scikit-learn 
+tensorflow 
+matplotlib 
+seaborn 
+plotly 
+colorama 
+pyfiglet 
+joblib 
+IPython 
+kagglehub 
+nbformat
+
