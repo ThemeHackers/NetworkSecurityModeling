@@ -67,6 +67,13 @@ Performance Evaluation
 
 Saving the Model
   - The trained Sequential Neural Network is saved to disk using Keras as NetworkSecurityModeling.keras.
+## Visualizations
+
+The project includes several visualizations to help understand model performance:
+
+- Feature Importance Bar Chart: Shows the top features ranked by Chi-square scores, visualized using Plotly.
+- Confusion Matrix Heatmap: Displays true positives, false positives, true negatives, and false negatives from the Random Forest model.
+- Accuracy and Loss Plot: Shows the training progress of the Sequential Neural Network over 100 epochs.
 
 
 
