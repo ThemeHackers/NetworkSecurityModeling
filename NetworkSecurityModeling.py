@@ -25,6 +25,11 @@ import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, GRU
 import colorama
+import kagglehub
+
+path = kagglehub.dataset_download("mrwellsdavid/unsw-nb15")
+
+print("Path to dataset files:", path)
 colorama.init(autoreset=True)
 
 def rainbow_text(text):
@@ -53,7 +58,9 @@ pio.templates["ck_template"] = go.layout.Template(
     layout_hoverlabel_font=dict(family="Calibri Light"),
 )
 pio.templates.default = 'ck_template+gridon'
-unsw_ = r'J:\data_training\UNSW-NB15-DATA\UNSW_NB15_training-set.csv'
+unsw_ = path + r'\\UNSW_NB15_training-set.csv'
+print(Fore.BLUE + f'Dataset Path')
+print(unsw_)
 df = pd.read_csv(unsw_)
 df.info()
 df.head(10)
@@ -231,10 +238,3 @@ fig.tight_layout()
 plt.savefig('Accuracy-Loss.png')
 model.save('NetworkSecurityModeling.keras')
 print(Fore.GREEN + "Model saved as NetworkSecurityModeling.keras")
-
-
-
-
-
-
-
